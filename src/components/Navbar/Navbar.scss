@@ -1,3 +1,8 @@
+.nav {
+  position: absolute;
+  width: 100%;
+}
+
 .nav__list {
   display: flex;
   list-style: none;
@@ -6,7 +11,19 @@
 }
 
 .nav__link {
-  margin-right: 61px;
   text-decoration: none;
   color: white;
+  font: 18pt 'Varela Round', sans-serif;
+
+  &:hover, &:focus, &:active {
+    opacity: 0.7;
+  }
+}
+
+.nav__element {
+  margin-right: 61px;
+}
+
+.nav__element:last-of-type {
+  margin-right: 0;
 }
