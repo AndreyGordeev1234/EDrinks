@@ -16,6 +16,11 @@
 
 .products__card-pic {
   width: 100%;
+  transition: .5s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .products__card-info-wrapper {

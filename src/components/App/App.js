@@ -6,6 +6,7 @@ import FilterByGroups from '../FilterByGroups';
 import FilterByProduct from '../FilterByProduct';
 import introImg from '../../assets/images/main.png';
 import Products from '../Products';
+import Footer from '../Footer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         </div>
         <Products />
       </main>
+      <Footer />
     </>
   );
 }
