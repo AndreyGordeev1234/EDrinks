@@ -1,0 +1,22 @@
+.products {
+  padding-top: 100px;
+}
+
+.products__wrapper {
+  margin: 0 120px;
+}
+
+.products__title {
+  font-weight: bold;
+  font-size: 65px;
+  line-height: 78px;
+  text-align: justify;
+  color: #47137C;
+}
+
+.products__cards {
+  padding-top: 77px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 58px;
+}
