@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "title": "Stranberry and blue",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.",
+      "price": "$15.00",
+      "imageUrl": ""
+    },
+    {
+      "id": 1,
+      "title": "Stranberry and white",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.",
+      "price": "$20.00",
+      "imageUrl": ""
+    },
+    {
+      "id": 2,
+      "title": "Stranberry and black",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.",
+      "price": "$25.00",
+      "imageUrl": ""
+    },
+    {
+      "id": 3,
+      "title": "Stranberry and green",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.",
+      "price": "$30.00",
+      "imageUrl": ""
+    }
+  ]
+}
