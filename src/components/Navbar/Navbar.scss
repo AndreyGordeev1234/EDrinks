@@ -30,3 +30,18 @@
 .nav__element:last-of-type {
   margin-right: 0;
 }
+
+@media screen and (max-width: 1250px) {
+  .nav__link {
+    font-size: 24px;
+  }
+  .nav__list {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .nav__list {
+    padding-top: 40px;
+  }
+}

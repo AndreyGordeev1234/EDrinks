@@ -13,8 +13,9 @@
 
 .intro__bottom-gradient {
   position: absolute;
-  height: 168px;
+  height: 468px;
   width: 100%;
+  z-index: -1;
   bottom: -103px;
   background: linear-gradient(180deg, #F5F1FF 0%, rgba(245, 241, 255, 0) 100%);
   transform: rotate(-180deg);
@@ -29,4 +30,52 @@
 .filters {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 1780px) {
+  .main {
+    margin-top: 59px;
+  }
+  .intro__bottom-gradient {
+    background: linear-gradient(180deg, #F5F1FF 0%, #F5F1FF 30%, rgba(245, 241, 255, 0) 100%);
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .main {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .intro {
+    min-height: 1000px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .intro {
+    min-height: 950px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .intro {
+    min-height: 900px;
+  }
+  .intro__bottom-gradient {
+    background: linear-gradient(180deg, #F5F1FF 0%, #F5F1FF 50%, rgba(245, 241, 255, 0) 100%);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .intro {
+    min-height: 850px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .intro {
+    min-height: 750px;
+  }
 }

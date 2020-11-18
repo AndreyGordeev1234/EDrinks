@@ -24,3 +24,21 @@
 .product-filter__ico {
   padding-left: 26px;
 }
+
+@media screen and (max-width: 1780px) {
+  .product-filter__wrapper {
+    padding-left: 100px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .product-filter__text {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .product-filter__text {
+    font-size: 18px;
+  }
+}
