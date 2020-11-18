@@ -1,5 +1,32 @@
 .intro {
   min-height: 1080px;
-  background: url(../../assets/images/main.png) no-repeat left top;
-  background-size: cover;
+  // background: url(../../assets/images/main.png) no-repeat left top;
+  // background-size: cover;
+  position: relative;
+}
+
+.intro-bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+.intro__bottom-gradient {
+  position: absolute;
+  height: 168px;
+  width: 100%;
+  bottom: -103px;
+  background: linear-gradient(180deg, #F5F1FF 0%, rgba(245, 241, 255, 0) 100%);
+  transform: rotate(-180deg);
+}
+
+.main {
+  margin-top: 99px;
+  min-height: 1000px;
+  background-color: #F5F1FF;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
 }

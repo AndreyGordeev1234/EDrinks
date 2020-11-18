@@ -1,0 +1,22 @@
+.group-filter__wrapper {
+  padding-left: 271px;
+}
+
+.grout-filter__list {
+  display: flex;
+  list-style: none;
+}
+
+.group-filter__element {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 42px;
+  color: #461874;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+.group-filter__element_active {
+  background-color: #612999;
+  color: white;
+}

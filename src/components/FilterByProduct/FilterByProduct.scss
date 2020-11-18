@@ -1,0 +1,26 @@
+.product-filter__wrapper {
+  padding-left: 219px;
+}
+
+.product-filter {
+  height: 59px;
+  background: rgba(97, 41, 153, 0.1);
+  border-radius: 29.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.product-filter__text {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #612999;
+  padding-left: 13px;
+  padding-right: 20px;
+}
+
+.product-filter__ico {
+  padding-left: 26px;
+}
