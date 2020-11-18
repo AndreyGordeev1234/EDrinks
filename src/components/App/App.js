@@ -1,6 +1,7 @@
 import Navbar from '../Navbar';
 import Greeting from '../Greeting';
 import './App.scss';
+import FeaturedProducts from '../FeaturedProducts';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <div className="intro">
         <Greeting />
+        <FeaturedProducts />
       </div>
     </>
   );

@@ -10,7 +10,9 @@ const SearchBar = () => (
             autoComplete="off"/>
       <button type="submit" 
               className="search-form__submit">
-        <img src={searchIcon}/>
+        <img src={searchIcon} 
+              className="search-form__icon"
+              alt ="Search"/>
       </button>
     </p>
   </form>
