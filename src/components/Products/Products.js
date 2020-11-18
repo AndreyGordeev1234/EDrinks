@@ -1,18 +1,14 @@
 import './Products.scss';
 import Product from '../Product/Product';
 
-const Products = () => (
+const Products = ({ products }) => (
   <section className="products">
     <div className="products__wrapper">
       <h2 className="products__title">All</h2>
       <div className="products__cards">
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
+        {products.map(product => (
+          <Product key={product.id} {...product}/>
+        ))}
       </div>
     </div>
   </section>

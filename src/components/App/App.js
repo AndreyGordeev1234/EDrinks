@@ -5,8 +5,8 @@ import FeaturedProducts from '../FeaturedProducts';
 import FilterByGroups from '../FilterByGroups';
 import FilterByProduct from '../FilterByProduct';
 import introImg from '../../assets/images/main.png';
-import Products from '../Products';
 import Footer from '../Footer';
+import ProductsContainer from '../../containers/ProductsContainer';
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           <FilterByGroups />
           <FilterByProduct />
         </div>
-        <Products />
+        <ProductsContainer />
       </main>
       <Footer />
     </>
