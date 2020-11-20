@@ -1,8 +1,8 @@
 import './FilterByGroups.scss';
 
 const FilterByGroups = () => (
-  <div className="group-filter__wrapper">
-    <div className="group-filter">
+  <div className="group-filter">
+    <div className="group-filter__wrapper">
       <ul className="grout-filter__list">
         <li 
           className="group-filter__element group-filter__element_active">
