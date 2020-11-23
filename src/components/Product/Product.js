@@ -21,7 +21,7 @@ const Product = ({ title, description, price, imageUrl }) => (
     </div>
     <div className="products__card-footer">
       <p className="products__card-price">
-        {price}
+        ${price}
       </p>
       <button className="products__card-buy">
         <img src={addToCardIco}
