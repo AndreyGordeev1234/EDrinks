@@ -25,7 +25,7 @@ const ProductsContainer = () => {
   products = useMemo(() => {
     if (filterGroup === 'All') return products;
 
-    if (filterGroup === 'Popular')
+    if (filterGroup === 'Popular Drinks')
       return products.filter(product => 
         product.isPopular === "true"
       );
@@ -35,7 +35,7 @@ const ProductsContainer = () => {
     );
   }, [products, filterGroup]);
 
-  return <Products products={products} isLoading={loading}/>
+  return <Products products={products} isLoading={loading} group={filterGroup}/>
 }
 
 export default ProductsContainer;

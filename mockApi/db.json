@@ -15,7 +15,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.",
       "price": "$20.00",
       "imageUrl": "",
-      "group": "Juice",
+      "group": "Juices",
       "isPopular": "true"
     },
     {
@@ -24,7 +24,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.",
       "price": "$25.00",
       "imageUrl": "",
-      "group": "Smoothie",
+      "group": "Natural Smoothie",
       "isPopular": "false"
     },
     {
@@ -33,7 +33,7 @@
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.",
       "price": "$30.00",
       "imageUrl": "",
-      "group": "Smoothie",
+      "group": "Natural Smoothie",
       "isPopular": "false"
     }
   ]

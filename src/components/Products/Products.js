@@ -2,13 +2,13 @@ import './Products.scss';
 import Product from '../Product/Product';
 import Spinner from '../Spinner';
 
-const Products = ({ products, isLoading }) => {
+const Products = ({ products, isLoading, group }) => {
   if (isLoading) return <Spinner />
 
   return (
     <section className="products">
       <div className="products__wrapper">
-        <h2 className="products__title">All</h2>
+        <h2 className="products__title">{group}</h2>
         <div className="products__cards">
           {products.map(product => (
             <Product key={product.id} {...product}/>

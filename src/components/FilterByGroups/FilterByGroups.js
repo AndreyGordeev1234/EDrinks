@@ -18,18 +18,18 @@ const FilterByGroups = ({ onGroupChange, group }) => {
               All
           </li>
           <li 
-            className={isActive('Popular')}
-            onClick={() => onGroupChange('Popular')}>
+            className={isActive('Popular Drinks')}
+            onClick={() => onGroupChange('Popular Drinks')}>
               Popular Drinks
           </li>
           <li 
-            className={isActive('Smoothie')}
-            onClick={() => onGroupChange('Smoothie')}>
+            className={isActive('Natural Smoothie')}
+            onClick={() => onGroupChange('Natural Smoothie')}>
               Natural Smoothie
           </li>
           <li 
-            className={isActive('Juice')}
-            onClick={() => onGroupChange('Juice')}>
+            className={isActive('Juices')}
+            onClick={() => onGroupChange('Juices')}>
               Juices
           </li>
           <li 
