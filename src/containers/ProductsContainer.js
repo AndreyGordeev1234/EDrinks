@@ -6,9 +6,10 @@ import { useApi } from "../services/ApiContext";
 
 const ProductsContainer = () => {
   const dispatch = useDispatch();
-  let products = useSelector(state => state.products);
-  const loading = useSelector(state => state.loading);
-  const filterName = useSelector(state => state.filterName);
+  let products = useSelector(state => state.products.products);
+  const loading = useSelector(state => state.products.loading);
+  const filterName = useSelector(state => state.filters.filterName);
+  const filterGroup = useSelector(state => state.filters.filterGroup);
   const api = useApi();
 
   useEffect(() => {
@@ -20,6 +21,19 @@ const ProductsContainer = () => {
       product.title.toLowerCase().indexOf(filterName) !== -1
     );
   }, [products, filterName]);
+
+  products = useMemo(() => {
+    if (filterGroup === 'All') return products;
+
+    if (filterGroup === 'Popular')
+      return products.filter(product => 
+        product.isPopular === "true"
+      );
+
+    return products.filter(product => 
+      product.group === filterGroup
+    );
+  }, [products, filterGroup]);
 
   return <Products products={products} isLoading={loading}/>
 }

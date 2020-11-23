@@ -44,3 +44,25 @@ describe('async actions', () => {
       });
   });
 });
+
+describe('sync actions', () => {
+  it('should create an action to filter by name', () => {
+    const name = 'Test name';
+    const expectedAction = {
+      type: types.FILTER_PRODUCTS_BY_NAME,
+      payload: name
+    };
+
+    expect(actions.filterProductsByName(name)).toEqual(expectedAction);
+  });
+
+  it('should create an action to filter by group', () => {
+    const group = 'Test group';
+    const expectedAction = {
+      type: types.FILTER_PRODUCTS_BY_GROUP,
+      payload: group
+    };
+
+    expect(actions.filterProductByGroup(group)).toEqual(expectedAction);
+  });
+});

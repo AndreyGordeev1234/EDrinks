@@ -2,11 +2,11 @@ import Navbar from '../Navbar';
 import Greeting from '../Greeting';
 import './App.scss';
 import FeaturedProducts from '../FeaturedProducts';
-import FilterByGroups from '../FilterByGroups';
 import FilterByProduct from '../FilterByProduct';
 import introImg from '../../assets/images/main.png';
 import Footer from '../Footer';
 import ProductsContainer from '../../containers/ProductsContainer';
+import FilterByGroupsContainer from '../../containers/FilterByGroupsContainer';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
       </div>
       <main className="main">
         <div className="filters">
-          <FilterByGroups />
+          <FilterByGroupsContainer />
           <FilterByProduct />
         </div>
         <ProductsContainer />

@@ -3,10 +3,10 @@ import { shallow } from 'enzyme';
 import Navbar from '../Navbar';
 import Greeting from '../Greeting';
 import FeaturedProducts from '../FeaturedProducts';
-import FilterByGroups from '../FilterByGroups';
 import FilterByProduct from '../FilterByProduct';
 import ProductsContainer from '../../containers/ProductsContainer';
 import Footer from '../Footer';
+import FilterByGroupsContainer from '../../containers/FilterByGroupsContainer';
 
 describe('App', () => {
   let component;
@@ -55,7 +55,7 @@ describe('App', () => {
   });
 
   it('has filter by group component', () => {
-    const filterByGroups = component.find(FilterByGroups);
+    const filterByGroups = component.find(FilterByGroupsContainer);
     expect(filterByGroups).toHaveLength(1);
   });
 

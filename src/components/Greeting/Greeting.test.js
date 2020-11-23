@@ -1,6 +1,6 @@
 import Greeting from './Greeting.js';
 import { shallow } from 'enzyme';
-import SearchBar from '../SearchBar/index.js';
+import SearchBarContainer from '../../containers/SearchBarContainer.js';
 
 describe('Greeting', () => {
   let component;
@@ -24,7 +24,7 @@ describe('Greeting', () => {
   });
 
   it('has search bar', () => {
-    const searchBar = component.find(SearchBar);
+    const searchBar = component.find(SearchBarContainer);
     expect(searchBar).toHaveLength(1);
   });
 });
