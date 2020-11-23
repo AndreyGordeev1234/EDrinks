@@ -21,7 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "mock": "json-server -w mockApi/db.json -p 4200 -d 750"
+    "mock": "json-server -w mockApi/db.json -p 4200 -d 750",
+    "coverage": "npm test -- --coverage --watchAll=false"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +44,8 @@
   },
   "devDependencies": {
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.5"
+    "enzyme-adapter-react-16": "^1.15.5",
+    "nock": "^13.0.5",
+    "redux-mock-store": "^1.5.4"
   }
 }

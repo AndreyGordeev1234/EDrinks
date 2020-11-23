@@ -11,6 +11,7 @@ const reducer = (state = initialState, action) => {
     case FETCH_PRODUCTS_REQUEST:
       return {
         ...state,
+        products: [],
         loading: true,
         error: null
       };
@@ -24,6 +25,7 @@ const reducer = (state = initialState, action) => {
     case FETCH_PRODUCTS_FAILURE:
       return {
         ...state,
+        products: [],
         loading: false,
         error: action.payload
       }
