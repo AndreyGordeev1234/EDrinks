@@ -17,7 +17,7 @@ const ProductsContainer = () => {
 
   products = useMemo(() => {
     return products.filter(product => 
-      product.title.indexOf(filterName) !== -1
+      product.title.toLowerCase().indexOf(filterName) !== -1
     );
   }, [products, filterName]);
 

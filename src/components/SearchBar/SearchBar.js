@@ -8,7 +8,7 @@ const SearchBar = ({ drink, onChangeDrink, onSearch }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSearch(drink.trim());
+    onSearch(drink.trim().toLowerCase());
   }
 
   return (
