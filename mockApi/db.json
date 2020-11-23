@@ -2,38 +2,74 @@
   "products": [
     {
       "id": 0,
-      "title": "Stranberry and blue",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.",
-      "price": "$15.00",
-      "imageUrl": "",
+      "title": "Instant Pot Yogurt",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris. Dolor sit amet, consectetur adipiscing elit. Mi mauris.",
+      "price": "$14.00",
+      "imageUrl": "https://tastesbetterfromscratch.com/wp-content/uploads/2020/05/Instant-Pot-Yogurt-14.jpg",
       "group": "Yogurt",
       "isPopular": "true"
     },
     {
       "id": 1,
-      "title": "Stranberry and white",
+      "title": "Carrot Juice",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.",
-      "price": "$20.00",
-      "imageUrl": "",
+      "price": "$9.00",
+      "imageUrl": "https://www.acouplecooks.com/wp-content/uploads/2020/07/Carrot-Juice-001.jpg",
       "group": "Juices",
       "isPopular": "true"
     },
     {
       "id": 2,
-      "title": "Stranberry and black",
+      "title": "Raspberry Yogurt Smoothie",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris. Dolor sit amet, consectetur adipiscing elit. Mi mauris.",
+      "price": "$24.00",
+      "imageUrl": "https://kristineinbetween.com/wp-content/uploads/2015/04/raspberry-smoothie-1.jpg",
+      "group": "Natural Smoothie",
+      "isPopular": "true"
+    },
+    {
+      "id": 3,
+      "title": "Stranberry And Blue",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.",
-      "price": "$25.00",
+      "price": "$29.00",
       "imageUrl": "",
       "group": "Natural Smoothie",
       "isPopular": "false"
     },
     {
-      "id": 3,
-      "title": "Stranberry and green",
+      "id": 4,
+      "title": "Tropical Smoothie",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.",
-      "price": "$30.00",
-      "imageUrl": "",
+      "price": "$24.00",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-lqyyGOqIECCgw0e2JWDBJKj614OFixOJkg&usqp=CAU",
       "group": "Natural Smoothie",
+      "isPopular": "true"
+    },
+    {
+      "id": 5,
+      "title": "Tart Frozen Yogurt",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris. Dolor sit amet, consectetur adipiscing elit. Mi mauris.",
+      "price": "$12.00",
+      "imageUrl": "https://www.onceuponachef.com/images/2010/08/Tart-Frozen-Yogurt-1200x1714.jpg",
+      "group": "Yogurt",
+      "isPopular": "false"
+    },
+    {
+      "id": 6,
+      "title": "Strawberry Banana Yogurt",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris. Dolor sit amet, consectetur adipiscing elit. Mi mauris.",
+      "price": "$14.00",
+      "imageUrl": "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Strawberry-Banana-Yogurt-Smoothie_EXPS_FT20_44330_F_0514_1_HOME.jpg",
+      "group": "Yogurt",
+      "isPopular": "true"
+    },
+    {
+      "id": 7,
+      "title": "Pineapple Juice",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.",
+      "price": "$9.00",
+      "imageUrl": "https://www.africanbites.com/wp-content/uploads/2019/08/IMG_6493.jpg",
+      "group": "Juices",
       "isPopular": "false"
     }
   ]
