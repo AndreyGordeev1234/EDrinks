@@ -1,9 +1,10 @@
-import { FETCH_PRODUCTS_REQUEST, FETCH_PRODUCTS_SUCCESS, FETCH_PRODUCTS_FAILURE } from "../constants/ActionTypes";
+import { FETCH_PRODUCTS_REQUEST, FETCH_PRODUCTS_SUCCESS, FETCH_PRODUCTS_FAILURE, FILTER_PRODUCTS_BY_NAME } from "../constants/ActionTypes";
 
 const initialState = {
   products: [],
   loading: false,
-  error: null
+  error: null,
+  filterName: ''
 }
 
 const reducer = (state = initialState, action) => {
@@ -28,6 +29,11 @@ const reducer = (state = initialState, action) => {
         products: [],
         loading: false,
         error: action.payload
+      }
+    case FILTER_PRODUCTS_BY_NAME:
+      return {
+        ...state,
+        filterName: action.payload
       }
     default: 
       return state;

@@ -1,5 +1,5 @@
 import './Greeting.scss';
-import SearchBar from '../SearchBar';
+import SearchBarContainer from '../../containers/SearchBarContainer';
 
 const Greeting = () => (
   <div className="container">
@@ -9,7 +9,7 @@ const Greeting = () => (
     <p className="intro__text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris arcu aenean in mauris elementum sed non. In sapien enim
     </p>
-    <SearchBar />
+    <SearchBarContainer />
   </div>
 )
 
