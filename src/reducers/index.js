@@ -33,7 +33,7 @@ const reducer = (state = initialState, action) => {
     case FILTER_PRODUCTS_BY_NAME:
       return {
         ...state,
-        filterName: action.payload.toLowerCase()
+        filterName: action.payload.trim().toLowerCase()
       }
     default: 
       return state;
