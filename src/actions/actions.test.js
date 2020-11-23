@@ -63,6 +63,16 @@ describe('sync actions', () => {
       payload: group
     };
 
-    expect(actions.filterProductByGroup(group)).toEqual(expectedAction);
+    expect(actions.filterProductsByGroup(group)).toEqual(expectedAction);
+  });
+
+  it('should create an action to sort products', () => {
+    const sortType = 'Test sort';
+    const expectedAction = {
+      type: types.SORT_PRODUCTS,
+      payload: sortType
+    };
+
+    expect(actions.sortProducts(sortType)).toEqual(expectedAction);
   });
 });

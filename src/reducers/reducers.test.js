@@ -76,4 +76,16 @@ describe('filters reducer', () => {
       filterGroup: group
     });
   });
+
+  it('should handle SORT_PRODUCTS', () => {
+    const sortType = 'Test sort';
+
+    expect(filtersReducer({}, {
+        type: types.SORT_PRODUCTS,
+        payload: sortType
+      })
+    ).toEqual({
+      sortType
+    })
+  })
 });

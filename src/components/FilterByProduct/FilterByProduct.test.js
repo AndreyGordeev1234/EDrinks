@@ -24,6 +24,16 @@ describe('FilterByProduct', () => {
 
   it('has filter text', () => {
     const text = component.find('.product-filter__text');
-    expect(text.text()).toContain('Filter');
+    expect(text.text()).toContain('Sort');
+  });
+
+  it('has no dropdown when toggle false', () => {
+    let component = shallow(<FilterByProduct toggle={false}/>);
+    expect(component.find('.product-filter__drop-down')).toHaveLength(0);
+  });
+
+  it('has dropdown when toggle true', () => {
+    let component = shallow(<FilterByProduct toggle={true}/>);
+    expect(component.find('.product-filter__drop-down')).toHaveLength(1);
   });
 });

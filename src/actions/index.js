@@ -1,4 +1,4 @@
-import { FETCH_PRODUCTS_REQUEST, FETCH_PRODUCTS_SUCCESS, FETCH_PRODUCTS_FAILURE, FILTER_PRODUCTS_BY_NAME, FILTER_PRODUCTS_BY_GROUP } from "../constants/ActionTypes";
+import { FETCH_PRODUCTS_REQUEST, FETCH_PRODUCTS_SUCCESS, FETCH_PRODUCTS_FAILURE, FILTER_PRODUCTS_BY_NAME, FILTER_PRODUCTS_BY_GROUP, SORT_PRODUCTS } from "../constants/ActionTypes";
 
 const productsRequested = () => ({
   type: FETCH_PRODUCTS_REQUEST
@@ -29,7 +29,12 @@ export const filterProductsByName = (name) => ({
   payload: name
 });
 
-export const filterProductByGroup = (group) => ({
+export const filterProductsByGroup = (group) => ({
   type: FILTER_PRODUCTS_BY_GROUP,
   payload: group
+});
+
+export const sortProducts = (sortType) => ({
+  type: SORT_PRODUCTS,
+  payload: sortType
 });
