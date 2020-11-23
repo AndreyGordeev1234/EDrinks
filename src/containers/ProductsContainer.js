@@ -7,6 +7,7 @@ import { useApi } from "../services/ApiContext";
 const ProductsContainer = () => {
   const dispatch = useDispatch();
   let products = useSelector(state => state.products);
+  const loading = useSelector(state => state.loading);
   const filterName = useSelector(state => state.filterName);
   const api = useApi();
 
@@ -20,7 +21,7 @@ const ProductsContainer = () => {
     );
   }, [products, filterName]);
 
-  return <Products products={products}/>
+  return <Products products={products} isLoading={loading}/>
 }
 
 export default ProductsContainer;
