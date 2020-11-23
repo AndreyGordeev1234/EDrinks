@@ -6,7 +6,7 @@ const Products = ({ products, isLoading, group }) => {
   if (isLoading) return <Spinner />
 
   return (
-    <section className="products">
+    <section className="products" id="smoothies">
       <div className="products__wrapper">
         <h2 className="products__title">{group}</h2>
         <div className="products__cards">

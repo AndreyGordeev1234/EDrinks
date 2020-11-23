@@ -2,7 +2,7 @@ import './Greeting.scss';
 import SearchBarContainer from '../../containers/SearchBarContainer';
 
 const Greeting = () => (
-  <div className="container">
+  <div className="container" id="home">
     <h1 className="intro__title">
       Enjoy!
     </h1>

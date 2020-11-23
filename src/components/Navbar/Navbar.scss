@@ -1,7 +1,14 @@
 .nav {
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 1;
+}
+
+.nav_active {
+  .nav__link {
+    color: #3e0077;
+    transition: 0.5s color;
+  }
 }
 
 .nav__list {
@@ -17,6 +24,7 @@
   font-size: 30px;
   line-height: 36px;
   color: white;
+  transition: 0.5s color;
 
   &:hover, &:focus, &:active {
     opacity: 0.7;
