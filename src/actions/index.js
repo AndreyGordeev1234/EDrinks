@@ -1,4 +1,4 @@
-import { FETCH_PRODUCTS_REQUEST, FETCH_PRODUCTS_SUCCESS, FETCH_PRODUCTS_FAILURE } from "../constants/ActionTypes";
+import { FETCH_PRODUCTS_REQUEST, FETCH_PRODUCTS_SUCCESS, FETCH_PRODUCTS_FAILURE, FILTER_PRODUCTS_BY_NAME } from "../constants/ActionTypes";
 
 const productsRequested = () => ({
   type: FETCH_PRODUCTS_REQUEST
@@ -23,3 +23,8 @@ export const fetchProducts = (apiService) => async (dispatch) => {
     dispatch(productsError(err))
   }
 }
+
+export const filterProductsByName = (name) => ({
+  type: FILTER_PRODUCTS_BY_NAME,
+  payload: name
+});
