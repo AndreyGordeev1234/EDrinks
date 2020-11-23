@@ -1,8 +1,9 @@
-import { FILTER_PRODUCTS_BY_NAME, FILTER_PRODUCTS_BY_GROUP } from "../constants/ActionTypes";
+import { FILTER_PRODUCTS_BY_NAME, FILTER_PRODUCTS_BY_GROUP, SORT_PRODUCTS } from "../constants/ActionTypes";
 
 const initialState = {
   filterName: '',
   filterGroup: 'All',
+  sortType: ''
 }
 
 const filters = (state = initialState, action) => {
@@ -17,6 +18,11 @@ const filters = (state = initialState, action) => {
         ...state,
         filterGroup: action.payload
       };
+    case SORT_PRODUCTS:
+      return {
+        ...state,
+        sortType: action.payload
+      }
     default: 
       return state;
   }

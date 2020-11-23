@@ -10,6 +10,7 @@ const ProductsContainer = () => {
   const loading = useSelector(state => state.products.loading);
   const filterName = useSelector(state => state.filters.filterName);
   const filterGroup = useSelector(state => state.filters.filterGroup);
+  const sortType = useSelector(state => state.filters.sortType);
   const api = useApi();
 
   useEffect(() => {
@@ -34,6 +35,19 @@ const ProductsContainer = () => {
       product.group === filterGroup
     );
   }, [products, filterGroup]);
+
+  products = useMemo(() => {
+    if (sortType === 'LTH') 
+      return products.sort((a, b) => a.price - b.price);
+    
+    if (sortType === 'HTL') 
+      return products.sort((a, b) => b.price - a.price);
+    
+    if (sortType === 'TITLE') 
+      return products.sort((a, b) => a.title < b.title ? -1 : a.title > b.title ? 1 : 0)
+
+    return products
+  }, [products, sortType]);
 
   return <Products products={products} isLoading={loading} group={filterGroup}/>
 }

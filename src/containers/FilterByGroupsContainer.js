@@ -1,5 +1,5 @@
 import FilterByGroups from '../components/FilterByGroups';
-import { filterProductByGroup } from '../actions/index';
+import { filterProductsByGroup } from '../actions/index';
 import { useDispatch, useSelector } from 'react-redux';
 
 const FilterByGroupsContainer = () => {
@@ -7,7 +7,7 @@ const FilterByGroupsContainer = () => {
   const group = useSelector(store => store.filters.filterGroup);
 
   const handleGroupChange = (group) => {
-    dispatch(filterProductByGroup(group));
+    dispatch(filterProductsByGroup(group));
   };
 
   return <FilterByGroups 
