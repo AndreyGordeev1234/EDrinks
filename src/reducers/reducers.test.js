@@ -1,9 +1,10 @@
-import reducer from './index.js';
+import productsReducer from './products.js';
+import filtersReducer from './filters.js';
 import * as types from '../constants/ActionTypes.js';
 
 describe('products reducer', () => {
   it('should return the initial state', () => {
-    expect(reducer(undefined, {}))
+    expect(productsReducer(undefined, {}))
       .toEqual({
         products: [],
         loading: false,
@@ -12,7 +13,7 @@ describe('products reducer', () => {
   });
 
   it('should handle FETCH_PRODUCTS_REQUEST', () => {
-    expect(reducer({}, {
+    expect(productsReducer({}, {
         type: types.FETCH_PRODUCTS_REQUEST
       })
     ).toEqual({
@@ -25,7 +26,7 @@ describe('products reducer', () => {
   it('should handle FETCH_PRODUCTS_SUCCESS', () => {
     const products = [1, 2, 3];
 
-    expect(reducer({}, {
+    expect(productsReducer({}, {
         type: types.FETCH_PRODUCTS_SUCCESS,
         payload: products
       })
@@ -39,7 +40,7 @@ describe('products reducer', () => {
   it('should handle FETCH_PRODUCTS_FAILURE', () => {
     const error = 'Test error.';
 
-    expect(reducer({}, {
+    expect(productsReducer({}, {
         type: types.FETCH_PRODUCTS_FAILURE,
         payload: error
       })
@@ -47,6 +48,32 @@ describe('products reducer', () => {
       products: [],
       loading: false,
       error: error
+    });
+  });
+});
+
+describe('filters reducer', () => {
+  it('should handle FILTER_PRODUCTS_BY_NAME', () => {
+    const name = 'Test name';
+    
+    expect(filtersReducer({}, {
+        type: types.FILTER_PRODUCTS_BY_NAME,
+        payload: name
+      })
+    ).toEqual({
+      filterName: name.trim().toLowerCase()
+    });
+  });
+
+  it('should handle FILTER_PRODUCTS_BY_GROUP', () => {
+    const group = 'Test group';
+
+    expect(filtersReducer({}, {
+        type: types.FILTER_PRODUCTS_BY_GROUP,
+        payload: group
+      })
+    ).toEqual({
+      filterGroup: group
     });
   });
 });

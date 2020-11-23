@@ -1,4 +1,4 @@
-import { FETCH_PRODUCTS_REQUEST, FETCH_PRODUCTS_SUCCESS, FETCH_PRODUCTS_FAILURE, FILTER_PRODUCTS_BY_NAME } from "../constants/ActionTypes";
+import { FETCH_PRODUCTS_REQUEST, FETCH_PRODUCTS_SUCCESS, FETCH_PRODUCTS_FAILURE, FILTER_PRODUCTS_BY_NAME, FILTER_PRODUCTS_BY_GROUP } from "../constants/ActionTypes";
 
 const productsRequested = () => ({
   type: FETCH_PRODUCTS_REQUEST
@@ -27,4 +27,9 @@ export const fetchProducts = (apiService) => async (dispatch) => {
 export const filterProductsByName = (name) => ({
   type: FILTER_PRODUCTS_BY_NAME,
   payload: name
+});
+
+export const filterProductByGroup = (group) => ({
+  type: FILTER_PRODUCTS_BY_GROUP,
+  payload: group
 });
