@@ -1,33 +1,40 @@
 import './CartProduct.scss';
-import productImg from '../../assets/images/cart-product.jpg';
+import productImage from '../../assets/images/product.png';
 import cartDelete from '../../assets/images/icons/cart-delete-icon.svg';
 
-const CartProduct = () => (
+const CartProduct = ({id, title, imageUrl, price, 
+  count, onIncrement, onDecrement, onDelete}) => (
   <div className="cart-product cart-products__product">
-    <div className="cart-product__image-container">
-      <img src={productImg} alt="Blueberry Special"
-        className="cart-product__image"/>
-    </div>
-    <div className="cart-product__info">
-      <p className="cart-product__name">
-        Blueberry Special
-      </p>
-      <p className="cart-product__price">
-        $12.00
-      </p>
-      <div className="cart-product__count-container">
-        <div className="cart-product__count-minus">
-          -
-        </div>
-        <span className="cart-product__count">
-          2
-        </span>
-        <div className="cart-product__count-plus">
-          +
+    <div className="cart-product__main">
+      <div className="cart-product__image-container">
+        <img src={imageUrl ? imageUrl : productImage} 
+          alt="Blueberry Special"
+          className="cart-product__image"/>
+      </div>
+      <div className="cart-product__info">
+        <p className="cart-product__name">
+          {title}
+        </p>
+        <p className="cart-product__price">
+          ${price}
+        </p>
+        <div className="cart-product__count-container">
+          <div className="cart-product__count-minus"
+            onClick={() => onDecrement(id)}>
+            -
+          </div>
+          <span className="cart-product__count">
+            {count}
+          </span>
+          <div className="cart-product__count-plus"
+            onClick={() => onIncrement(id)}>
+            +
+          </div>
         </div>
       </div>
     </div>
-    <div className="cart-product__delete">
+    <div className="cart-product__delete"
+      onClick={() => onDelete(id)}>
       <img src={cartDelete} alt="Delete"
         className="cart-product__delete-icon"/>
     </div>

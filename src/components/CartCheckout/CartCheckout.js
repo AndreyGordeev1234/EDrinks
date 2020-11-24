@@ -1,6 +1,6 @@
 import './CartCheckout.scss';
 
-const CartCheckout = () => (
+const CartCheckout = ({total}) => (
   <div className="cart-checkout cart__checkout">
     <div className="cart-checkout__info">
       <div className="checkout-info cart-checkout__delivery">
@@ -16,7 +16,7 @@ const CartCheckout = () => (
           Total
         </p>
         <p className="cart-checkout__price">
-          45.00 usd
+          {total.toFixed(2)} usd
         </p>
       </div>
     </div>

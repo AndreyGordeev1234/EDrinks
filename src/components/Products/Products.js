@@ -1,6 +1,6 @@
 import './Products.scss';
-import Product from '../Product/Product';
 import Spinner from '../Spinner';
+import ProductContainer from '../../containers/ProductContainer';
 
 const Products = ({ products, isLoading, group }) => {
   if (isLoading) return <Spinner />
@@ -11,7 +11,7 @@ const Products = ({ products, isLoading, group }) => {
         <h2 className="products__title">{group}</h2>
         <div className="products__cards">
           {products.map(product => (
-            <Product key={product.id} {...product}/>
+            <ProductContainer key={product.id} {...product}/>
           ))}
         </div>
         
