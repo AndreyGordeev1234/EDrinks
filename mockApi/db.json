@@ -7,7 +7,10 @@
       "price": "14.00",
       "imageUrl": "https://tastesbetterfromscratch.com/wp-content/uploads/2020/05/Instant-Pot-Yogurt-14.jpg",
       "group": "Yogurt",
-      "isPopular": "true"
+      "isPopular": "true",
+      "calories": 25,
+      "size": 20,
+      "discount": 15
     },
     {
       "id": 1,
@@ -16,7 +19,10 @@
       "price": "9.00",
       "imageUrl": "https://www.acouplecooks.com/wp-content/uploads/2020/07/Carrot-Juice-001.jpg",
       "group": "Juices",
-      "isPopular": "true"
+      "isPopular": "true",
+      "calories": 20,
+      "size": 15,
+      "discount": 0
     },
     {
       "id": 2,
@@ -25,7 +31,10 @@
       "price": "24.00",
       "imageUrl": "https://kristineinbetween.com/wp-content/uploads/2015/04/raspberry-smoothie-1.jpg",
       "group": "Natural Smoothie",
-      "isPopular": "true"
+      "isPopular": "true",
+      "calories": 35,
+      "size": 20,
+      "discount": 10
     },
     {
       "id": 3,
@@ -34,7 +43,10 @@
       "price": "29.00",
       "imageUrl": "",
       "group": "Natural Smoothie",
-      "isPopular": "false"
+      "isPopular": "false",
+      "calories": 25,
+      "size": 15,
+      "discount": 10
     },
     {
       "id": 4,
@@ -43,7 +55,10 @@
       "price": "24.00",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-lqyyGOqIECCgw0e2JWDBJKj614OFixOJkg&usqp=CAU",
       "group": "Natural Smoothie",
-      "isPopular": "true"
+      "isPopular": "true",
+      "calories": 30,
+      "size": 10,
+      "discount": 0
     },
     {
       "id": 5,
@@ -52,7 +67,10 @@
       "price": "12.00",
       "imageUrl": "https://www.onceuponachef.com/images/2010/08/Tart-Frozen-Yogurt-1200x1714.jpg",
       "group": "Yogurt",
-      "isPopular": "false"
+      "isPopular": "false",
+      "calories": 25,
+      "size": 10,
+      "discount": 30
     },
     {
       "id": 6,
@@ -61,7 +79,10 @@
       "price": "14.00",
       "imageUrl": "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Strawberry-Banana-Yogurt-Smoothie_EXPS_FT20_44330_F_0514_1_HOME.jpg",
       "group": "Yogurt",
-      "isPopular": "true"
+      "isPopular": "true",
+      "calories": 20,
+      "size": 10,
+      "discount": 0
     },
     {
       "id": 7,
@@ -70,7 +91,11 @@
       "price": "9.00",
       "imageUrl": "https://www.africanbites.com/wp-content/uploads/2019/08/IMG_6493.jpg",
       "group": "Juices",
-      "isPopular": "false"
+      "isPopular": "false",
+      "calories": 40,
+      "size": 15,
+      "discount": 20
     }
-  ]
+  ],
+  "featured": [2, 5, 7]
 }

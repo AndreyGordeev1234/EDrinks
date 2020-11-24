@@ -7,4 +7,11 @@ export default class Api {
 
     return json;
   }
+
+  async getFeatured() {
+    const response = await fetch(`${this.url}/featured`);
+    const json = await response.json();
+
+    return json;
+  }
 }

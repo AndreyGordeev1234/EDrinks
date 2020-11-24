@@ -1,12 +1,12 @@
 import Navbar from '../Navbar';
 import Greeting from '../Greeting';
 import './App.scss';
-import FeaturedProducts from '../FeaturedProducts';
 import introImg from '../../assets/images/main.png';
 import Footer from '../Footer';
 import ProductsContainer from '../../containers/ProductsContainer';
 import FilterByGroupsContainer from '../../containers/FilterByGroupsContainer';
 import FilterByProductContainer from '../../containers/FilterByProductContainer';
+import FeaturedProductsContainer from '../../containers/FeaturedProductsContainer';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <img src={introImg} className="intro-bg"
             alt="Enjoy!" />
         <Greeting />
-        <FeaturedProducts />
+        <FeaturedProductsContainer />
         <div className="intro__bottom-gradient"></div>
       </div>
       <main className="main">
