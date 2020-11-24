@@ -6,11 +6,12 @@
 
 .nav_active {
   background-color: #612999;
-  transition: 1s;
+  transition: background-color .25s ease-out .25s;
   
   .nav__list {
     padding-top: 25px;
     padding-bottom: 25px;
+    transition: .5s padding;
   }
 }
 
