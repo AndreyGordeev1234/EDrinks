@@ -2,11 +2,11 @@ import App from './App';
 import { shallow } from 'enzyme';
 import Navbar from '../Navbar';
 import Greeting from '../Greeting';
-import FeaturedProducts from '../FeaturedProducts';
 import ProductsContainer from '../../containers/ProductsContainer';
 import Footer from '../Footer';
 import FilterByGroupsContainer from '../../containers/FilterByGroupsContainer';
 import FilterByProductContainer from '../../containers/FilterByProductContainer';
+import FeaturedProductsContainer from '../../containers/FeaturedProductsContainer';
 
 describe('App', () => {
   let component;
@@ -35,7 +35,7 @@ describe('App', () => {
   });
 
   it('has featured products', () => {
-    const featured = component.find(FeaturedProducts);
+    const featured = component.find(FeaturedProductsContainer);
     expect(featured).toHaveLength(1);
   });
 

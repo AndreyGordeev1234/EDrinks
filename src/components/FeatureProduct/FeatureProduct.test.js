@@ -4,7 +4,8 @@ import { shallow } from 'enzyme';
 describe('FeatureProduct', () => {
   const props = {
     mainColor: 'white',
-    secondColor: 'black'
+    secondColor: 'black',
+    product: {}
   }
   let component;
   beforeEach(() => {

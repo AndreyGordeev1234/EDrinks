@@ -8,23 +8,23 @@ const middlewares = [ thunk ];
 const mockStore = configureMockStore(middlewares);
 
 describe('async actions', () => {
-  const products = [1, 2, 3]
+  const mockResponse = (status, statusText, response) => {
+    return new window.Response(response, {
+      status: status,
+      statusText: statusText,
+      headers: {
+        'Content-type': 'application/json'
+      }
+    });
+  };
 
   afterEach(() => {
     window.fetch = () => {};
   });
 
   it('creates FETCH_PRODUCTS_SUCCESS when fetching products has been done', () => {
-    const mockResponse = (status, statusText, response) => {
-      return new window.Response(response, {
-        status: status,
-        statusText: statusText,
-        headers: {
-          'Content-type': 'application/json'
-        }
-      });
-    };
-    
+    const products = [1, 2, 3];
+
     window.fetch = jest.fn().mockImplementation(() =>
       Promise.resolve(mockResponse(200, null, JSON.stringify(products))));
 
@@ -39,6 +39,28 @@ describe('async actions', () => {
     });
 
     return store.dispatch(actions.fetchProducts(new Api()))
+      .then(() => {
+        expect(store.getActions()).toEqual(expectedActions);
+      });
+  });
+
+  it('creates FETCH_FEATURED_SUCCESS when fetching featured has been done', () => {
+    const featured = [0, 1, 2];
+    
+    window.fetch = jest.fn().mockImplementation(() =>
+      Promise.resolve(mockResponse(200, null, JSON.stringify(featured))));
+
+    const expectedActions = [
+      { type: types.FETCH_FEATURED_REQUEST },
+      { type: types.FETCH_FEATURED_SUCCESS, payload: featured }
+    ]
+    const store = mockStore({
+      featured: [],
+      loading: false,
+      error: null
+    })
+
+    return store.dispatch(actions.fetchFeatured(new Api()))
       .then(() => {
         expect(store.getActions()).toEqual(expectedActions);
       });
