@@ -1,6 +1,5 @@
 import './FeatureProduct.scss';
 import FeatureProductsLoader from './FeatureProductsLoader.js';
-import products from '../../reducers/products';
 
 const FeatureProduct = ({mainColor, secondColor, product}) => (
   <div className="featured-product" 
