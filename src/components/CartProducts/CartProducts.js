@@ -1,11 +1,10 @@
-import './CartProducts.scss'
-import CartProduct from '../CartProduct/CartProduct';
+import './CartProducts.scss';
+import CartProductContainer from '../../containers/CartProductContainer';
 
-const CartProducts = () => (
+const CartProducts = ({products}) => (
   <div className="cart-products cart__products">
-    <CartProduct />
-    <CartProduct />
-    <CartProduct />
+    {products.map(product => 
+      <CartProductContainer key={product.id} {...product}/>)}
     <div className="cart-products__inner">
     </div>
   </div>

@@ -1,4 +1,4 @@
-import { FETCH_PRODUCTS_REQUEST, FETCH_PRODUCTS_SUCCESS, FETCH_PRODUCTS_FAILURE, FILTER_PRODUCTS_BY_NAME, FILTER_PRODUCTS_BY_GROUP, SORT_PRODUCTS, FETCH_FEATURED_REQUEST, FETCH_FEATURED_SUCCESS, FETCH_FEATURED_FAILURE } from "../constants/ActionTypes";
+import { FETCH_PRODUCTS_REQUEST, FETCH_PRODUCTS_SUCCESS, FETCH_PRODUCTS_FAILURE, FILTER_PRODUCTS_BY_NAME, FILTER_PRODUCTS_BY_GROUP, SORT_PRODUCTS, FETCH_FEATURED_REQUEST, FETCH_FEATURED_SUCCESS, FETCH_FEATURED_FAILURE, GET_CART_PRODUCTS, ADD_TO_CART, INCREMENT_PRODUCT_COUNT, DECREMENT_PRODUCT_COUNT, DELETE_PRODUCT_FROM_CART } from "../constants/ActionTypes";
 
 const productsRequested = () => ({
   type: FETCH_PRODUCTS_REQUEST
@@ -62,3 +62,28 @@ export const fetchFeatured = (apiService) => async (dispatch) => {
     dispatch(featuredError(e));
   }
 };
+
+export const getCartProducts = (products) => ({
+  type: GET_CART_PRODUCTS,
+  payload: products
+});
+
+export const addToCart = (productId) => ({
+  type: ADD_TO_CART,
+  payload: productId
+});
+
+export const incrementProductCount = (productId) => ({
+  type: INCREMENT_PRODUCT_COUNT,
+  payload: productId
+});
+
+export const decrementProductCount = (productId) => ({
+  type: DECREMENT_PRODUCT_COUNT,
+  payload: productId
+});
+
+export const deleteProductFromCart = (productId) => ({
+  type: DELETE_PRODUCT_FROM_CART,
+  payload: productId
+})

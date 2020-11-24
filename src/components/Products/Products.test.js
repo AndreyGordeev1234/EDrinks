@@ -1,6 +1,6 @@
 import Products from './Products.js';
 import { shallow } from 'enzyme';
-import Product from '../Product/Product.js';
+import ProductContainer from '../../containers/ProductContainer.js';
 
 describe('Products', () => {
   let products = [
@@ -46,7 +46,7 @@ describe('Products', () => {
   });
 
   it('has products in a given quantity', () => {
-    const products = component.find(Product);
+    const products = component.find(ProductContainer);
     expect(products).toHaveLength(products.length);
   });
 });

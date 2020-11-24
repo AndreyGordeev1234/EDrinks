@@ -2,7 +2,7 @@ import './Product.scss';
 import productImage from '../../assets/images/product.png';
 import addToCardIco from '../../assets/images/icons/add-to-card-icon.svg'
 
-const Product = ({ title, description, price, imageUrl }) => (
+const Product = ({ id, title, description, price, imageUrl, onAdd }) => (
   <div className="products__card">
     <div className="products__card-top">
       <div className="products__card-pic-wrap">
@@ -23,7 +23,8 @@ const Product = ({ title, description, price, imageUrl }) => (
       <p className="products__card-price">
         ${price}
       </p>
-      <button className="products__card-buy">
+      <button className="products__card-buy"
+        onClick={() => onAdd(id)}>
         <img src={addToCardIco}
           alt="Add to cart"
           className="products__card-cart-icon"/>

@@ -1,6 +1,6 @@
 import './Navbar.scss';
 import { useState } from 'react';
-import Cart from '../Cart';
+import CartContainer from '../../containers/CartContainer';
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -34,7 +34,7 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-      <Cart />
+      <CartContainer />
     </nav>
   )
 }
