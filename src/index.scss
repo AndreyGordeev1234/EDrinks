@@ -362,8 +362,14 @@ html {
   font-family: 'Varela Round', sans-serif;
   color: white;
   font-size: 14pt;
+  box-sizing: border-box;
 }
 
-p, ul, h2, h3 {
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+p, ul, h2, h3, h4 {
   margin: 0;
+  padding: 0;
 }

@@ -1,5 +1,6 @@
 import './Navbar.scss';
 import { useState } from 'react';
+import Cart from '../Cart';
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -15,6 +16,7 @@ const Navbar = () => {
 
   return (
     <nav className={active ? "nav nav_active" : "nav"}>
+      <div className="nav__brand-icon"></div>
       <ul className="nav__list">
         <li className="nav__element">
           <a href="#home" className="nav__link">
@@ -32,6 +34,7 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
+      <Cart />
     </nav>
   )
 }
