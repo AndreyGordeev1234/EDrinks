@@ -14,6 +14,10 @@ const Products = ({ products, isLoading, group }) => {
             <Product key={product.id} {...product}/>
           ))}
         </div>
+        
+        {!products.length && <h3 className="products__no-found">
+          No products found
+        </h3>}
       </div>
     </section>
   )

@@ -21,10 +21,23 @@
   column-gap: 58px;
 }
 
+.products__no-found {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 90px;
+  color: #47137C;
+  text-align: center;
+  padding-bottom: 90px;
+}
+
 @media screen and (max-width: 1780px) {
   .products__cards {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 58px;
+  }
+
+  .products__no-found {
+    font-size: 60px;
   }
 }
 
@@ -32,5 +45,9 @@
   .products__cards {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 58px;
+  }
+
+  .products__no-found {
+    font-size: 40px;
   }
 }
