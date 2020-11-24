@@ -5,9 +5,12 @@
 }
 
 .nav_active {
-  .nav__link {
-    color: #3e0077;
-    transition: 0.5s color;
+  background-color: #612999;
+  transition: 1s;
+  
+  .nav__list {
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
@@ -16,6 +19,7 @@
   list-style: none;
   justify-content: center;
   padding-top: 75px;
+  transition: 1s padding;
 }
 
 .nav__link {

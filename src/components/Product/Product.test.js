@@ -6,7 +6,7 @@ describe('Product', () => {
     "id": 0,
     "title": "Stranberry and blue",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi mauris.",
-    "price": "$15.00",
+    "price": "15.00",
     "imageUrl": "http://www.testImage.com/1"
   }
 
@@ -77,7 +77,7 @@ describe('Product', () => {
 
   it('price equal given value', () => {
     const price = component.find('.products__card-price');
-    expect(price.text()).toEqual(product.price);
+    expect(price.text()).toEqual(`$${product.price}`);
   });
 
   it('has buy button', () => {
