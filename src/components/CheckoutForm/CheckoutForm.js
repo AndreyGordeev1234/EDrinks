@@ -34,7 +34,14 @@ const CheckoutForm = ({onCheckout}) =>
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (checkInputs() !== -1) onCheckout();
+    if (checkInputs() !== -1) 
+      onCheckout({
+        firstName: firstName.value.trim(),
+        secondName: secondName.value.trim(),
+        email: email.value.trim(),
+        address1: address1.value.trim(),
+        address2: address2.value.trim()
+      });
   }
   
   return (

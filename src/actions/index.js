@@ -4,6 +4,7 @@ import {
   FETCH_FEATURED_SUCCESS, FETCH_FEATURED_FAILURE, GET_CART_PRODUCTS, ADD_TO_CART, 
   INCREMENT_PRODUCT_COUNT, DECREMENT_PRODUCT_COUNT, DELETE_PRODUCT_FROM_CART, FETCH_CHECKOUT_REQUEST,
   FETCH_CHECKOUT_SUCCESS, FETCH_CHECKOUT_FAILURE, CLEAR_CART, CLEAR_SUCCESS } from "../constants/ActionTypes";
+import { sendEmail } from "../utils/emailJsInit";
 
 const productsRequested = () => ({
   type: FETCH_PRODUCTS_REQUEST
@@ -111,10 +112,11 @@ const checkoutError = (error) => ({
   payload: error
 })
 
-export const fetchCheckout = (apiService, userInfo) => async (dispatch) => {
+export const fetchCheckout = (apiService, products, userInfo) => async (dispatch) => {
   try{
     dispatch(checkoutRequested());
-    const checkout = await apiService.checkout(userInfo);
+    const checkout = await apiService.checkout(userInfo, products);
+    sendEmail(checkout.orderId, userInfo.firstName, userInfo.email, products);
     dispatch(checkoutLoaded(checkout))
     dispatch(clearCart());
   } catch (e) {
