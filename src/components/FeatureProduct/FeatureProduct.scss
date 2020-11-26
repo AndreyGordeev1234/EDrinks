@@ -87,3 +87,13 @@
     font-size: 30px;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .featured-product {
+    width: 250px;
+    margin: 0 auto;
+  }
+  .featured-product:last-of-type {
+    margin: 0 auto;
+  }
+}

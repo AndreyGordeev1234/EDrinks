@@ -7,11 +7,17 @@ import ProductsContainer from '../../containers/ProductsContainer';
 import FilterByGroupsContainer from '../../containers/FilterByGroupsContainer';
 import FilterByProductContainer from '../../containers/FilterByProductContainer';
 import FeaturedProductsContainer from '../../containers/FeaturedProductsContainer';
+import { useState } from 'react';
 
 function App() {
+  const [toggleCart, setToggleCart] = useState(false);
+  const handleCartToggle = () => {
+    setToggleCart(prev => !prev);
+  }
+
   return (
-    <>
-      <Navbar />
+    <div className="app" onClick={() => setToggleCart(false)}>
+      <Navbar toggleCart={toggleCart} onToggleCart={handleCartToggle}/>
       <div className="intro">
         <img src={introImg} className="intro-bg"
             alt="Enjoy!" />
@@ -27,7 +33,7 @@ function App() {
         <ProductsContainer />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

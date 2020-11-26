@@ -9,7 +9,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  z-index: 2;
+  z-index: 1;
   cursor: pointer;
 
   transition: .5s;
@@ -38,12 +38,12 @@
   background-color: white;
   z-index: 3;
   transform: translateX(100%);
-  transition: .2s linear;
+  transition: .2s ease-in-out;
 }
 
 .cart__nav_active {
   transform: translateX(0);
-  transition: .2s linear;
+  transition: .2s ease-in-out;
 }
 
 .cart__nav-close {
@@ -83,4 +83,13 @@
   line-height: 54px;
 
   color: #461874;
+}
+
+@media screen and (max-width: 750px) {
+  .cart__icon-box {
+    right: 20px;
+    top: 60px;
+    width: 60px;
+    height: 60px;
+  } 
 }

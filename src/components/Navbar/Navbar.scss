@@ -6,6 +6,10 @@
   transition: 1s padding;
 }
 
+.nav_closed {
+  visibility: hidden;
+}
+
 .nav_active {
   background-color: #612999;
   transition: background-color .25s ease-out .25s;

@@ -14,4 +14,9 @@ export default class Api {
 
     return json;
   }
+
+  async checkout(userInfo) {
+    const response = await new Promise(resolve => resolve({status: "success"}));
+    return response;
+  }
 }

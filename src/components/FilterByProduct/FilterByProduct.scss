@@ -70,3 +70,9 @@
     font-size: 18px;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .product-filter__wrapper {
+    padding-left: 0;
+  }
+}

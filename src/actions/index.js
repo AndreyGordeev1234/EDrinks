@@ -1,4 +1,9 @@
-import { FETCH_PRODUCTS_REQUEST, FETCH_PRODUCTS_SUCCESS, FETCH_PRODUCTS_FAILURE, FILTER_PRODUCTS_BY_NAME, FILTER_PRODUCTS_BY_GROUP, SORT_PRODUCTS, FETCH_FEATURED_REQUEST, FETCH_FEATURED_SUCCESS, FETCH_FEATURED_FAILURE, GET_CART_PRODUCTS, ADD_TO_CART, INCREMENT_PRODUCT_COUNT, DECREMENT_PRODUCT_COUNT, DELETE_PRODUCT_FROM_CART } from "../constants/ActionTypes";
+import { 
+  FETCH_PRODUCTS_REQUEST, FETCH_PRODUCTS_SUCCESS, FETCH_PRODUCTS_FAILURE, 
+  FILTER_PRODUCTS_BY_NAME, FILTER_PRODUCTS_BY_GROUP, SORT_PRODUCTS, FETCH_FEATURED_REQUEST, 
+  FETCH_FEATURED_SUCCESS, FETCH_FEATURED_FAILURE, GET_CART_PRODUCTS, ADD_TO_CART, 
+  INCREMENT_PRODUCT_COUNT, DECREMENT_PRODUCT_COUNT, DELETE_PRODUCT_FROM_CART, FETCH_CHECKOUT_REQUEST,
+  FETCH_CHECKOUT_SUCCESS, FETCH_CHECKOUT_FAILURE, CLEAR_CART, CLEAR_SUCCESS } from "../constants/ActionTypes";
 
 const productsRequested = () => ({
   type: FETCH_PRODUCTS_REQUEST
@@ -73,6 +78,10 @@ export const addToCart = (productId) => ({
   payload: productId
 });
 
+export const clearCart = () => ({
+  type: CLEAR_CART
+})
+
 export const incrementProductCount = (productId) => ({
   type: INCREMENT_PRODUCT_COUNT,
   payload: productId
@@ -86,4 +95,33 @@ export const decrementProductCount = (productId) => ({
 export const deleteProductFromCart = (productId) => ({
   type: DELETE_PRODUCT_FROM_CART,
   payload: productId
+})
+
+const checkoutRequested = () => ({
+  type: FETCH_CHECKOUT_REQUEST
+})
+
+const checkoutLoaded = (orderId) => ({
+  type: FETCH_CHECKOUT_SUCCESS,
+  payload: orderId
+})
+
+const checkoutError = (error) => ({
+  type: FETCH_CHECKOUT_FAILURE,
+  payload: error
+})
+
+export const fetchCheckout = (apiService, userInfo) => async (dispatch) => {
+  try{
+    dispatch(checkoutRequested());
+    const checkout = await apiService.checkout(userInfo);
+    dispatch(checkoutLoaded(checkout))
+    dispatch(clearCart());
+  } catch (e) {
+    dispatch(checkoutError(e));
+  }
+}
+
+export const clearSuccess = () => ({
+  type: CLEAR_SUCCESS
 })

@@ -63,5 +63,10 @@
   &:hover, &:active, &:focus {
     background: #411b66;
   }
+
+  &:disabled {
+    background: #4c3f58; 
+    cursor: default;   
+  }
 }
 

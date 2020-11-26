@@ -69,3 +69,13 @@
     padding: 10px 20px;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .group-filter__element {
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+  .group-filter__wrapper {
+    padding-left: 0;
+  }
+}

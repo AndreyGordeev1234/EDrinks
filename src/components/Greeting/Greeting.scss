@@ -23,6 +23,7 @@
   .intro__title {
     padding-top: 219px;
     font-size: 100px;
+    line-height: 171px;
   }
   .intro__text {
     font-size: 25px;
@@ -33,6 +34,7 @@
   .intro__title {
     padding-top: 189px;
     font-size: 80px;
+    line-height: 151px;
   }
   .intro__text {
     max-width: 451px;
@@ -42,6 +44,7 @@
 @media screen and (max-width: 1450px) {
   .intro__title {
     font-size: 70px;
+    line-height: 131px;
   }
   .intro__text {
     font-size: 22px;
@@ -60,6 +63,7 @@
   .intro__title {
     padding-top: 119px;
     font-size: 60px;
+    line-height: 101px;
   }
   .intro__text {
     font-size: 18px;
@@ -75,5 +79,22 @@
     font-size: 18px;
     max-width: 251px;
     line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .intro__title {
+    font-size: 50px;
+  }
+  .intro__text {
+    font-size: 18px;
+    max-width: 251px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    padding: 0 50px;
   }
 }

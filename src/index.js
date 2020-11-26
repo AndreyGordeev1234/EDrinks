@@ -11,12 +11,10 @@ import ApiProvider from './services/ApiContext';
 const api = new Api();
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <ApiProvider api={api}>
-        <App />
-      </ApiProvider>
-    </Provider>
-  </React.StrictMode>,
+  <Provider store={store}>
+    <ApiProvider api={api}>
+      <App />
+    </ApiProvider>
+  </Provider>,
   document.getElementById('root')
 );

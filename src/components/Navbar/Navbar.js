@@ -2,7 +2,7 @@ import './Navbar.scss';
 import { useState } from 'react';
 import CartContainer from '../../containers/CartContainer';
 
-const Navbar = () => {
+const Navbar = ({toggleCart, onToggleCart}) => {
   const [active, setActive] = useState(false);
 
   window.onscroll = () => {
@@ -34,7 +34,7 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-      <CartContainer />
+      <CartContainer toggle={toggleCart} handleCartToggle={onToggleCart}/>
     </nav>
   )
 }

@@ -1,4 +1,4 @@
-import { GET_CART_PRODUCTS, ADD_TO_CART, INCREMENT_PRODUCT_COUNT, DECREMENT_PRODUCT_COUNT, DELETE_PRODUCT_FROM_CART } from "../constants/ActionTypes";
+import { GET_CART_PRODUCTS, ADD_TO_CART, INCREMENT_PRODUCT_COUNT, DECREMENT_PRODUCT_COUNT, DELETE_PRODUCT_FROM_CART, CLEAR_CART } from "../constants/ActionTypes";
 
 const initialState = {
   products: {}
@@ -56,6 +56,11 @@ const cart = (state = initialState, action) => {
         products
       };
     }
+    case CLEAR_CART:
+      return {
+        ...state,
+        products: {}
+      }
     default:
       return state;
   }

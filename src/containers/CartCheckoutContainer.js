@@ -2,7 +2,7 @@ import CartCheckout from '../components/CartCheckout';
 import { useSelector } from 'react-redux';
 import { useMemo } from 'react';
 
-const CartCheckoutContainer = () => {
+const CartCheckoutContainer = (props) => {
   const cartProducts = useSelector(state => state.cart.products);
   const products = useSelector(state => state.products.products);
 
@@ -16,7 +16,7 @@ const CartCheckoutContainer = () => {
     }, 0);
   }, [products, cartProducts])
 
-  return <CartCheckout total={checkoutSum}/>
+  return <CartCheckout total={checkoutSum} {...props}/>
 }
 
 export default CartCheckoutContainer;
