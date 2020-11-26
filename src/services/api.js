@@ -15,8 +15,8 @@ export default class Api {
     return json;
   }
 
-  async checkout(userInfo) {
-    const response = await new Promise(resolve => resolve({status: "success"}));
+  async checkout(userInfo, products) {
+    const response = await new Promise(resolve => resolve({status: "success", orderId: Math.floor(Math.random()*8000)+1000}));
     return response;
   }
 }
