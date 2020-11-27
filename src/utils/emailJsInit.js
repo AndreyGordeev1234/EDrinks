@@ -1,7 +1,7 @@
 import { init, send } from 'emailjs-com';
 
 export function initEmailJS() {
-  init(config.EMAILJS_KEY);
+  init(process.env.EMAILJS_KEY);
 }
 
 function sendFeedback (templateId, variables) {
