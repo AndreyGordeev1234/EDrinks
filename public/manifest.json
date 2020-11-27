@@ -1,0 +1,12 @@
+{
+	"short_name": "Edrinks",
+	"name": "Edrinks!",
+	"lang": "en",
+	"description": "App for ordering drinks",
+	"start_url": "/",
+	"background_color": "#47137c",
+	"theme_color": "#47137c",
+	"dir": "ltr",
+	"display": "standalone",
+	"orientation": "any"
+}
