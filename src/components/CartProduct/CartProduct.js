@@ -2,8 +2,8 @@ import './CartProduct.scss';
 import productImage from '../../assets/images/product.png';
 import cartDelete from '../../assets/images/icons/cart-delete-icon.svg';
 
-const CartProduct = ({id, title, imageUrl, price, 
-  count, onIncrement, onDecrement, onDelete}) => (
+const CartProduct = ({id, title = '', imageUrl, price = 0, 
+  count = 1, onIncrement, onDecrement, onDelete}) => (
   <div className="cart-product cart-products__product">
     <div className="cart-product__main">
       <div className="cart-product__image-container">

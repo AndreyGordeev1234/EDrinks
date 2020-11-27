@@ -1,7 +1,7 @@
 import './CartProducts.scss';
 import CartProductContainer from '../../containers/CartProductContainer';
 
-const CartProducts = ({products}) => (
+const CartProducts = ({products = []}) => (
   <div className="cart-products cart__products">
     {products.map(product => 
       <CartProductContainer key={product.id} {...product}/>)}

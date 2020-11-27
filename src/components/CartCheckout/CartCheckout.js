@@ -2,7 +2,7 @@ import './CartCheckout.scss';
 import CheckoutModalContainer from '../../containers/CheckoutModalContainer.js';
 import { useState } from 'react';
 
-const CartCheckout = ({total, closeCart}) => {
+const CartCheckout = ({total = 0, closeCart}) => {
   const [modalIsOpen,setIsOpen] = useState(false);
   function openModal() {
     setIsOpen(true);
