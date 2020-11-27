@@ -17,9 +17,10 @@ const FeaturedProductsContainer = () => {
 
   products = useMemo(() => {
     let featuredSet = new Set(featured);
-    return products.filter(product =>
+    let res = products.filter(product =>
       featuredSet.has(product.id)
     );
+    return res;
   }, [products, featured]);
 
   return <FeaturedProducts products={products} loading={loading}/>
