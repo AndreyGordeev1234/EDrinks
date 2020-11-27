@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/EDrinks/static/css/main.75eb54e8.chunk.css",
+    "main.js": "/EDrinks/static/js/main.b4652111.chunk.js",
+    "main.js.map": "/EDrinks/static/js/main.b4652111.chunk.js.map",
+    "runtime-main.js": "/EDrinks/static/js/runtime-main.87d6dfe6.js",
+    "runtime-main.js.map": "/EDrinks/static/js/runtime-main.87d6dfe6.js.map",
+    "static/js/2.2c179034.chunk.js": "/EDrinks/static/js/2.2c179034.chunk.js",
+    "static/js/2.2c179034.chunk.js.map": "/EDrinks/static/js/2.2c179034.chunk.js.map",
+    "index.html": "/EDrinks/index.html",
+    "static/css/main.75eb54e8.chunk.css.map": "/EDrinks/static/css/main.75eb54e8.chunk.css.map",
+    "static/js/2.2c179034.chunk.js.LICENSE.txt": "/EDrinks/static/js/2.2c179034.chunk.js.LICENSE.txt",
+    "static/media/add-to-card-icon.beef8776.svg": "/EDrinks/static/media/add-to-card-icon.beef8776.svg",
+    "static/media/cart-delete-icon.e7bd20ee.svg": "/EDrinks/static/media/cart-delete-icon.e7bd20ee.svg",
+    "static/media/cart-icon.1bb064f3.svg": "/EDrinks/static/media/cart-icon.1bb064f3.svg",
+    "static/media/filter-icon.8f53a3b3.svg": "/EDrinks/static/media/filter-icon.8f53a3b3.svg",
+    "static/media/main.d209775a.png": "/EDrinks/static/media/main.d209775a.png",
+    "static/media/product.1ea389e1.png": "/EDrinks/static/media/product.1ea389e1.png",
+    "static/media/search-icon.67732d7a.svg": "/EDrinks/static/media/search-icon.67732d7a.svg",
+    "static/media/index.scss": "/EDrinks/static/media/varela-round-v13-latin-regular.cac75cd5.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.87d6dfe6.js",
+    "static/js/2.2c179034.chunk.js",
+    "static/css/main.75eb54e8.chunk.css",
+    "static/js/main.b4652111.chunk.js"
+  ]
+}
