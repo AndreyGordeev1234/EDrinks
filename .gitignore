@@ -1,7 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-/src/utils/emailJsInit.js
-/src/utils/firebase.js
+/public/config.js
 
 # dependencies
 /node_modules
