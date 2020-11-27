@@ -1,0 +1,51 @@
+.checkout-form__wrapper {
+  padding-top: 30px;
+  border: none;
+}
+
+.checkout-form__error {
+  background-color: rgb(240, 97, 97);
+  padding: 10px 20px;
+}
+
+.checkout-form__info {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout-form__label {
+  font-weight: bold;
+  font-size: 24px;
+  color: #000000;
+}
+
+.checkout-form__field {
+  padding: 5px;
+  margin-left: 20px;
+  min-width: 350px;
+}
+
+.ReactModal__Content {
+  border: none !important;
+  border-radius: 50px !important;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 1.0);
+}
+
+.checkout-form__submit-wrapper {
+  padding-top: 25px;
+}
+
+.checkout-form__submit {
+  padding: 25px 0;
+  width: 100%;
+
+  font-size: 35px;
+  line-height: 42px;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  background: #612999;
+  cursor: pointer;
+}

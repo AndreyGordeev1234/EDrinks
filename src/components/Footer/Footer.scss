@@ -1,0 +1,17 @@
+.footer {
+  height: 150px;
+  background-color: #612999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16pt;
+}
+
+.footer__link {
+  padding-left: 10px;
+  color: white;
+}
+
+.footer__name {
+  padding-right: 10px;
+}
