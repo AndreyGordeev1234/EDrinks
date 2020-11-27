@@ -2,7 +2,7 @@ import firebase from 'firebase/app'
 
 export function firebaseInit() {
   firebase.initializeApp({
-    apiKey: config.FIREBASE_KEY,
+    apiKey: process.env.FIREBASE_KEY,
     authDomain: "edrinks-app.firebaseapp.com",
     databaseURL: "https://edrinks-app.firebaseio.com",
     projectId: "edrinks-app",
