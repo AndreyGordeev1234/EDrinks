@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/EDrinks/static/css/main.8bc8588a.chunk.css",
-    "main.js": "/EDrinks/static/js/main.7a493c65.chunk.js",
-    "main.js.map": "/EDrinks/static/js/main.7a493c65.chunk.js.map",
+    "main.css": "/EDrinks/static/css/main.46f8c1d3.chunk.css",
+    "main.js": "/EDrinks/static/js/main.6116cfcc.chunk.js",
+    "main.js.map": "/EDrinks/static/js/main.6116cfcc.chunk.js.map",
     "runtime-main.js": "/EDrinks/static/js/runtime-main.87d6dfe6.js",
     "runtime-main.js.map": "/EDrinks/static/js/runtime-main.87d6dfe6.js.map",
     "static/js/2.2c179034.chunk.js": "/EDrinks/static/js/2.2c179034.chunk.js",
     "static/js/2.2c179034.chunk.js.map": "/EDrinks/static/js/2.2c179034.chunk.js.map",
     "index.html": "/EDrinks/index.html",
-    "static/css/main.8bc8588a.chunk.css.map": "/EDrinks/static/css/main.8bc8588a.chunk.css.map",
+    "static/css/main.46f8c1d3.chunk.css.map": "/EDrinks/static/css/main.46f8c1d3.chunk.css.map",
     "static/js/2.2c179034.chunk.js.LICENSE.txt": "/EDrinks/static/js/2.2c179034.chunk.js.LICENSE.txt",
     "static/media/add-to-card-icon.1524525a.svg": "/EDrinks/static/media/add-to-card-icon.1524525a.svg",
     "static/media/cart-delete-icon.140072d7.svg": "/EDrinks/static/media/cart-delete-icon.140072d7.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.87d6dfe6.js",
     "static/js/2.2c179034.chunk.js",
-    "static/css/main.8bc8588a.chunk.css",
-    "static/js/main.7a493c65.chunk.js"
+    "static/css/main.46f8c1d3.chunk.css",
+    "static/js/main.6116cfcc.chunk.js"
   ]
 }
