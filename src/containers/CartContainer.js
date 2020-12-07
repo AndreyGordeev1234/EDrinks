@@ -1,12 +1,13 @@
 import Cart from '../components/Cart';
-import { useEffect, useMemo } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCartProducts } from '../actions';
+import { getProductsInCart } from '../reducers';
 
 const CartContainer = (props) => {
   const dispatch = useDispatch();
-  const cartProducts = useSelector(state => state.cart.products);
-  let products = useSelector(state => state.products.products);
+  const cartProducts = useSelector((state) => state.cart.products);
+  const products = useSelector((state) => getProductsInCart(state));
 
   useEffect(() => {
     let cart = localStorage.getItem('cart');
@@ -19,23 +20,13 @@ const CartContainer = (props) => {
     localStorage.setItem('cart', JSON.stringify(cartProducts));
   }, [cartProducts]);
 
-  products = useMemo(() => {
-    let filtered = products.filter(product => 
-      cartProducts[product.id] !== undefined
-    );
-    
-    let res = filtered.map(product => 
-      ({
-        ...product, 
-        count: cartProducts[product.id].count
-      })
-    );
-    return res;
-  }, [products, cartProducts]);
-
-  return <Cart 
-    count={Object.keys(cartProducts).length} 
-    products={products} {...props}/>
-}
+  return (
+    <Cart
+      count={Object.keys(cartProducts).length}
+      products={products}
+      {...props}
+    />
+  );
+};
 
 export default CartContainer;
